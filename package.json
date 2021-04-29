@@ -26,5 +26,13 @@
     "eslint-config-prettier": "^6.15.0",
     "prettier": "^2.2.1"
   },
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mujinga21/Tech-Blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mujinga21/Tech-Blog/issues"
+  },
+  "homepage": "https://github.com/mujinga21/Tech-Blog#readme"
 }
