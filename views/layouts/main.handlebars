@@ -18,28 +18,30 @@
         <a href="/">The Tech Blog</a>
       </h1>
       <div>
-       <button type="button" class="btn">Home</button>
-       </div>
-       <div>
-          <button type="button" class="btn btn-link">Dashboard</button>
-           <a href="/profile"></a>
-          </div>
-  
-         <div class="text-right align-top login-out">
-           
+        <button type="button" class="btn">Home</button>
+      </div>
+      <div>
+        <button type="button" class="btn"><a href="/profile">Dashboard</a></button>
+        
+      </div>
+
+      <div class="text-right align-top login-out">
+
         {{#if loggedIn}}
-        <a id="logout" href="/logout">Logout</a>
+        <button type="button" class="btn">
+          <a id="logout" href="/logout">Logout</a> </button>
         {{else}}
-        <a href="/login">Login</a>
+        <button type="button" class="btn"><a href="/login">Login</a> </button>
+
         {{/if}}
-          </div>
       </div>
-      </div>
-    </header>
-    <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
-      {{{ body }}}
-    </main>
+  </div>
+  </div>
+  </header>
+  <main class="container container-fluid mt-5">
+    <!-- Render the sub layout -->
+    {{{ body }}}
+  </main>
   </div>
 
   <!-- Render script for logged in users only -->
