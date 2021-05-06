@@ -25,6 +25,16 @@
         
       </div>
 
+       <nav>
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <a href="/profile">profile</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
+{{!-- 
       <div class="text-right align-top login-out">
 
         {{#if loggedIn}}
@@ -34,7 +44,7 @@
         <button type="button" class="btn"><a href="/login">Login</a> </button>
 
         {{/if}}
-      </div>
+      </div> --}}
   </div>
   </div>
   </header>
@@ -51,3 +61,5 @@
 </body>
 
 </html>
+
+

@@ -45,5 +45,4 @@ document
   .querySelector('.post-list')
   .addEventListener('click', delButtonHandler);
 
-  const newFormHandler = async (event) => {
-    event.preventDefault(); 
+ 

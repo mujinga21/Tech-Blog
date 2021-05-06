@@ -1,5 +1,27 @@
 # Tech-Blog
-## Acceptance Criteria
+
+function generateMarkdown(data) {
+  return `## ${data.title}
+${renderLicenseBadge(data.license)}
+  ## Table of Contents
+
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [license](#license)
+  * [Contribution](#contribution)
+  * [Test](#test)
+  * [Question](#question)
+  ## Installation
+  ${data.installation}
+  Used Mysql, node.js
+  ## Usage
+  ${data.usage}
+  This is to create a blog page for Technicians
+  ## License
+  ${renderLicenseLink(data.license)}
+  ## Description
+  ${data.description}
 
 ```md
 GIVEN a CMS-style blog site
@@ -36,7 +58,19 @@ THEN I am signed out of the site
 WHEN I am idle on the page for more than a set time
 THEN I am automatically signed out of the site 
 ```
+  ## Contribution
+  ${data.contribution}
+  ## Test
+  ${data.test} 
 
-## Mock-Up
 
-The following animation demonstrates the application functionality:
+  ## Questions
+If you have questions about my projects please long into my GitHub at the address below:
+  $https://github.com/${data.github}
+To contact me please send an email to the email address below:
+  ${data.email}@gmail.com
+`;
+}
+
+module.exports = generateMarkdown;
+
